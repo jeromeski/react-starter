@@ -1,0 +1,43 @@
+SETTING UP REACT
+// install --> import --> use
+
+#Pre-setup React
+1.  install npm validator module
+    shutdown webpack
+    yarn add validator@8.0.0
+    code: import validator from 'validator'
+    test: console.log(validator.IsEmail('test@gmail.com'))
+
+#Setup React
+1.  yarn add react@16.0.0 react-dom@16.0.0
+2.  yarn run build
+3.  code: import React from 'react';
+4.  code: import ReactDOM from 'react-dom';
+5.  test: const template = React.createElement('p', {}, 'testing 123');
+          ReactDOM.render(template, document.getElementById('app'))
+
+#Setup Babel
+// loader
+1.  yarn add babel-core@6.25.0 babel-loader@7.1.1
+2.  webpack.config.js
+    Module Rules
+    --> code:
+      module: {
+        rules: [{
+          loader: "babel-loader",
+          test: /\.js$/,
+          exclude: /node_modules/
+        }]
+      }
+3.  create .babelrc in the root
+    code:
+    {
+      "presets": [
+        "env", 
+        "react"
+      ]
+    }
+
+4.  shutdown webpack
+5.  yarn run build
+
