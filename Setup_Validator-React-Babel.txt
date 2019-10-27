@@ -30,7 +30,7 @@ SETTING UP REACT
           exclude: /node_modules/
         }]
       },
-      devtool : "cheap-module-eval-src-map"
+      devtool : "cheap-module-eval-source-map"
       
 3.  create .babelrc in the root
     code:
