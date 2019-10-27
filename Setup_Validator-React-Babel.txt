@@ -19,6 +19,7 @@ SETTING UP REACT
 #Setup Babel
 // loader
 1.  yarn add babel-core@6.25.0 babel-loader@7.1.1
+
 2.  webpack.config.js
     Module Rules
     --> code:
@@ -28,7 +29,9 @@ SETTING UP REACT
           test: /\.js$/,
           exclude: /node_modules/
         }]
-      }
+      },
+      devtool : "cheap-module-eval-src-map"
+      
 3.  create .babelrc in the root
     code:
     {
@@ -41,3 +44,4 @@ SETTING UP REACT
 4.  shutdown webpack
 5.  yarn run build
 
+!Everytime you configure webpack shutdown and restart it
