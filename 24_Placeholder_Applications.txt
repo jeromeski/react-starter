@@ -1,2 +1,3 @@
 https://jsonplaceholder.typicode.com/users
-https://www.w3schools.com/whatis/whatis_json.asp
+https://ipinfo.io/
+http://restcountries.eu/
