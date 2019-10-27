@@ -1,0 +1,12 @@
+For Mac
+https://code.visualstudio.com/
+https://github.com/nvm-sh/nvm#installation-and-update
+https://nodejs.org/en/
+https://yarnpkg.com/lang/en/docs/install/#mac-stable
+
+For Windows
+
+https://code.visualstudio.com/
+https://gitforwindows.org/
+https://nodejs.org/en/download/
+https://yarnpkg.com/en/docs/install#windows-stable

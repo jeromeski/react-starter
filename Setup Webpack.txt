@@ -1,0 +1,45 @@
+#Avoid Global Modules
+
+1.  yarn remove babel-cli live-server
+    npm uninstall -g babel-cli live-server
+
+2.  yarn add live-server babel-cli@6.24.1
+// Add to dependencies
+
+3.  add scripts in package.json
+// "scripts" : {
+    "serve" : "live-server public/",
+    "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch"
+    }
+
+#Setup/ Installing and Config Webpack
+
+1.  yarn add webpack@3.1.0
+2.  update package.json -> "build": "webpack"
+3.  create webpack.config.js in the root of your folder
+
+webpack.config.js file
+
+1.  provide entry path
+2.  provide output path and filename
+    console.log(__dirname) // contains the path to the webpack folder
+    
+    
+    what about edge cases? ex. another computer
+      const path = require('path')
+      console.log(path.join(__dirname, 'public')); // to check kun tama ang path
+      path.join(__dirname, 'public')
+
+const path = require('path')
+
+module.exports = {
+  entry: './src/app.js',
+  output: {
+    path: path.join(__dirname, 'public'),
+    filename: 'bundle.js'
+  }
+};
+
+3. delete unwanted folder directories in /public ex. /script
+4. update package.json scripts: webpack --> webpack --w
+
